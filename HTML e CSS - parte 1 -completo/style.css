@@ -1,0 +1,67 @@
+#banner{ /* id banner para estilisar a imagem BARBER SHOP.png */
+    width: 100%; /* largura da imagem ocupando toda a tela */
+    height: 200px; /* Altura da imagem de 200px */
+}
+.principal{ /*classe da div principal */
+    background: gray; /* cor de fundo */
+    padding: 30px; /* da uma margem em todos os lados do objeto de trabalho de 30px */
+}
+
+.titulo-centralizado{ /*classe para estilizar os titulos centralizados */
+    text-align: center; /* alinhamento do texto centralizado */
+    font-size: 25px; /* tamanho do texto de 25px */
+}
+
+.titulo-principal{ /*classe para estilizar o titulo principal */
+    padding-left: 20px; /* margem esquerda de 20px */
+}
+
+h2{ /*estilos no texto do titulo secundario */
+    color: black; /*cor do titulo */
+    height: 20px;   /*Altura do titulo de 20px */
+    border: 10px solid #000000; /*Borda solida preta de 10px ao redor do titulo h2*/
+    padding: 20px;  /* da uma margem em todos os lados do objeto de trabalho de 20px */
+    margin-left: 40px; /* da uma margem esquerda de 40px */
+    margin-right: 40px;   /* da uma margem direita de 40px */
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+
+strong.paragrafo_2{
+    color: #f5f10b;
+}
+
+strong.p1{
+    color: #f5f10b;
+}
+
+#p2{
+    font-size: 20px;
+}
+
+.itens{ /* classe da lista em topico de beneficios */
+    font-style: italic; /* estilo da fonte do texto para italico */
+    font-size: 30px;
+    padding: 25px;
+}
+
+.beneficios{
+    background: #FFFFFF;
+    
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15px;
+    padding: 20px;
+}
+
+.imagembeneficios{
+    width: 50%; /* largura da imagem metade da tela */
+    height: 480px; /* Altura da imagem de 480px */
+}
