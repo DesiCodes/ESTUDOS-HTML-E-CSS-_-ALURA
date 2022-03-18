@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Barbearia Alura - Contatos</title>
+
+        <link rel="stylesheet" href="reset.css"> <!-- Estilo que reseta todo css da pagina automaticamente, tirando bordas e estilos que estao sobrando como padrao --> 
+        <link rel="stylesheet" href="estilo_contatos.css"> 
+    </head>
+
+    <body>
+        <header>
+
+            <div class="caixa">
+                <h1> <a href="principal_alura.html"> <img src="logo.png" alt="Logo da Barbearia Alura"> </a> </h1> <!-- a imagem da logo é o objeto principal da pagina por isso fica dentro do h1 -->
+            
+                <nav> <!--Tag para menu de navegacao do site -->
+                    <ul>
+                        <!-- A tag <a> serve para marcar uma âncora(hyperlink) para outro ponto na internet -->
+                        <li> <a href="principal_alura.html"> Home </a> </li>
+                        <li> <a href="produtos.html"> Produtos </a> </li>
+                        <li> <a href="contatos.html"> Contatos </a> </li>
+                    </ul>
+                </nav>
+            </div>  
+
+        </header>
+
+        <main>
+            <form action=""> <!-- A tag <form> serve para marcar a criacao de um formulario -->
+                <!-- label é a etiqueta de entrada de dados para o input -->
+                <label for="nomeesobrenome">Nome e sobrenome</label> <!-- etiqueta para o input de Nome e sobrenome -->
+                <input type="text" id="nomeesobrenome" class="input_padrao" required> <!-- tag para recebimento do tipo texto através do usuário -->
+
+                <label for="email">Email</label> <!-- etiqueta para o input de Email -->
+                <input type="email" id="email" class="input_padrao" required placeholder="seuemail@dominio.com.br"> <!-- input para o Email do usuário -->
+
+                <label for="telefone">Telefone</label> <!-- etiqueta para o input de telefone -->
+                <input type="tel" id="telefone" class="input_padrao" required placeholder="(XX)9XXXX-XXXX"> <!-- input para o telefone do usuário -->
+
+                <label for="mensagem">Mensagem</label> <!-- etiqueta para o textarea de mensagem -->
+                <textarea class="input_padrao" id="mensagem" cols="70" rows="10" required placeholder="Escreva algo para nós aqui nesta caixa"></textarea> <!-- tag para recebimento do tipo area de texto através do usuário de forma especial -->
+
+                <fieldset> <!-- divisao em formulario -->
+                    <legend>Como prefere o nosso contato?</legend> <!-- parágrafo em formulário -->
+                    <label for="radio_email"><input type="radio" name="contato" id="radio_email" value="email" required checked> Email</label>
+                    
+    
+                    <label for="radio_telefone"><input type="radio" name="contato" id="radio_telefone" value="telefone" required> Telefone</label>
+                    
+    
+                    <label for="radio_whatsapp"><input type="radio" name="contato" id="radio_whatsapp" value="whatsapp" required> Whatsapp</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend class="periodo">Em qual período prefere ser atendido?</legend>
+                    <select name="" id="">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="">Manhã</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noite</option>
+                    </select>
+                </fieldset>
+
+
+                <label class="checkbox"><input type="checkbox" required checked> Gostaria de receber nossas novidades por email?</label>
+
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
+
+            </form>
+
+            <table> <!-- cria uma tabela -->
+                <thead> <!-- cabeçalho da tabela -->
+                    <tr> <!-- cria uma linha da tabela -->
+                        <th>Dia</th> <!-- cria uma celula da tabela -->
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>13h ~ 20h30</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>13h ~ 20h30</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>13h ~ 20h30</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+        <footer>
+            <a href="principal_alura.html"> <img src="logo-branco.png" alt="Logo da Barbearia Alura"> </a>
+            <p class="copyright" >&copy; Copyright Barbearia Alura - 2021</p>
+        </footer>
+    </body>
+</html>

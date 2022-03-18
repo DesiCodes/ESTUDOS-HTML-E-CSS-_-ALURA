@@ -1,0 +1,222 @@
+
+nav{
+    position: absolute; /*Faz a lista de navegacao se deslocar do cabeçalho buscando mudar seu posicionamento inicial*/
+    /* Definindo novo posicionamento inicial: */
+    top: 110px;
+    right: 0;
+    /* Definindo altura da lista no centro da imagem de logo */
+}
+
+nav li{
+    display: inline; /* Os elementos de lista dentro da tag de navegacao serao apresentados na tela na mesma linha  */
+    margin: 0 0 0 15px; /* cria um espaço de 15px entre os elementos da lista de navegacao da pagina */
+    /* margin: top right bottom left; */
+}
+
+nav a{
+    text-transform: uppercase; /* Transforma os elementos com hiperlink(com âncora) dentro da tag de navegação em letra maiuscula*/
+    color: #000000; /* Cor dos hyperlinks para preto */
+    font-weight: bold; /* Transforma o conteudo dos hyperlinks para negrito(bold) */
+    font-size: 22px; /* tamanho da fonte de 22px */
+    text-decoration: none; /* Tira o sublinhado dos elementos da lista */
+}
+
+nav a:hover{/* Quando o mouse estiver por cima dos hiperlinks, dentro do menu de navegacao*/
+    color: #C78C19;
+    text-decoration: underline;
+
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /*Cria uma margem interna superior e uma inferior de 50px, afastando os produtos do cabeçalho. */
+}
+.produtos li{
+    display: inline-block; /*os elementos ficam alinhados pela linha de baixo e ajustaveis separadamente*/
+    text-align: center; /*conteudo centralizados*/
+    width: 30%; /*cada uma das linhas ocupam 1/3 da largura da pagina*/
+    vertical-align: top; /*alinha todas as linhas por sua limitacao superior(top)*/
+    /* background: #CCCCCC; */ /*Margem para visualizar cada elemento da lista e seus espaçamentos, de forma mais clara*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*Faz com que a ocupaçao de 30% de cada elemento seja definitivo e que os espaçamentos internos estejam dentro desses 30%*/
+    /*configurando as bordas dos produtos*/
+    /*border-color: #000000;
+    border-width: 2px;
+    border-style: solid;*/
+    border: 2px solid #000000;
+    border-radius: 10px;
+
+}
+
+.produtos li:hover{ /* Quando o mouse estiver por cima dos hiperlinks, dentro da main dos produtos*/
+    border-color: #C78C19;
+}
+
+.produtos li:active{ /* Quando o mouse for clicado nos hiperlinks, dentro da main dos produtos*/
+    border-color: #088c19;
+}
+
+.produtos li:hover h2{ /* Quando o mouse estiver por cima dos hiperlinks, dentro da main dos produtos, alteramos o titulo dois*/
+    font-size: 35px; /* Fonte do titulo 2 aumenta para 35px*/
+}
+
+
+.produtos h2{
+    font-size: 30px; /* Fonte dos títulos dos produtos de 30px de tamnho */
+    font-weight: bold; /* titulos em negrito */
+}
+
+.produto-preço{
+    font-size: 22px; /* Fonte dos preços dos produtos de 22px de tamnho */
+    font-weight: bold; /* preços dos produtos em negrito */
+    margin-top: 10px; /* espaçamento de 10px entre o texto do preço e o texto da descrição do corte */
+}
+
+.produto-descriçao{
+    font-size: 18px;
+}
+
+
+/*Css da página inicial*/
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Montserrat', sans-serif; /* altera tipo de fonte do conteudo total da pagina para Montserrat */
+}
+
+header{
+    background-color: #BBBBBB; /* Cor de fundo do cabeçalho setada na cor cinza */
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif; /* altera tipo de fonte para Montserrat */
+}
+
+.banner{
+    width: 100%; /*a imagem com classe banner fica ocupando 100%  da lagura da pagina*/
+    
+}
+
+.principal{
+    padding: 3em 0;
+    background-color: #FEFEFE;
+    width: 940px; /* largura de 940px */
+    /*alinhando a div ao centro*/
+    /* margem da direita e da esquerda iguais calculadas automaticamente */
+    margin: 0 auto; /* margem para cima e para baixo de 0px e para esquerda e para direita calculadas automaticamente para que tenham o mesmo tamnaho */
+    /*Delegamos para o navegador fazer a conta de calcular a largura que resta, dividir por dois, e adicionar metade em cada um dos lados.*/
+}
+
+.titulo-principal{
+    text-align: center; /*Centraliza o titulo na pagina*/
+    font-size: 2em; /*Faz a fonte do texto ter 2 vezes o tamnho padrao da fonte da pagina(2em)*/ /*Tamanho base: 15px, 2em = 30px*/
+    margin: 0 0 1em; /* top=0; right = 0; left = 0; bot = 1em = 30px */ /*margin bottom */
+    clear: left; /*Limpa os floats situados a esquerda*/
+    
+}
+
+.principal p{
+    margin: 0 0 1em; /* top=0; right = 0; left = 0; bot = 1em = 30px */ /*margin bottom */
+   
+}
+
+.principal strong{
+    font-weight: bold; /* toda tag strong na classe principal tem estilo de letra em negrito */
+}
+
+.principal em{
+    font-style: italic; /* toda tag em na classe principal tem estilo de letra em italico*/
+}
+
+.utensilios{
+    width: 120px; /* largura de 120px dentro da pagina*/
+    float: left; /* flutua no lado esquerdo dos textos*/ /*Descolar o elemento na lateral e deixar os outros elementos ao redor*/
+    /* faz o elemento ficar flutuando, deslocado da pagina, porem com sua sombra lai ainda, permitindo ficar do lado de textos,
+     e esses se adequarem ao formato do elemento(como por exemplo uma imagem)*/
+    margin: 0 20px 20px 0; /* top=0; right = 20px; left = 0; bot = 20px */ 
+   
+}
+
+.mapa{
+    padding: 3em 0; /* Espaçamento interno de 3em pra cima e pra baixo e 0 pros lados */
+    background: linear-gradient(#FEFEFE,#888888);
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em; /* Espaçamento externo de 3em pra baixo */
+    text-align: center; /* centraliza o texto na pagina */
+    
+}
+
+.beneficios{
+    padding: 3em 0;
+    background-color: #888888;
+}
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5; /*aumenta a altura da linha em 50%*, aumentando o espaçamento entre os itens da lista*/
+
+}
+
+/*
+.itens:nth-child(2n){  
+    font-weight: bold; 
+} */ /*Todos os elemnetos pares da lista */
+
+/*
+.itens:nth-child(2){ 
+    font-weight: bold; 
+} */ /*O segundo elemneto da lista */
+
+/*
+.itens:first-child{
+    font-weight: bold; 
+} */ /*O primeiro elemneto da lista */
+
+/*
+.itens:last-child{
+  font-weight: bold;
+} */ /*O último elemneto da lista */
+
+.imagem-beneficios{
+    width: 60%; /* largura de 60% da pagina */
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+  }
+  
+
+footer{
+    text-align: center;
+    background: url(bg.jpg); /* adicionando uma imagem de fundo em um elemento */
+    padding: 40px 0; /* espaçamento interno de 40px pra cima e pra baixo e 0 pros lados*/
+    
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+

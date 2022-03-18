@@ -1,0 +1,175 @@
+header{
+    background-color: #BBBBBB; /* Cor de fundo do cabeçalho setada na cor cinza */
+    padding: 20px 0;
+}
+
+nav{
+    position: absolute; /*Faz a lista de navegacao se deslocar do cabeçalho buscando mudar seu posicionamento inicial*/
+    /* Definindo novo posicionamento inicial: */
+    top: 110px;
+    right: 0;
+    /* Definindo altura da lista no centro da imagem de logo */
+}
+
+nav li{
+    display: inline; /* Os elementos de lista dentro da tag de navegacao serao apresentados na tela na mesma linha  */
+    margin: 0 0 0 15px; /* cria um espaço de 15px entre os elementos da lista de navegacao da pagina */
+    /* margin: top right bottom left; */
+}
+
+nav a{
+    text-transform: uppercase; /* Transforma os elementos com hiperlink(com âncora) dentro da tag de navegação em letra maiuscula*/
+    color: #000000; /* Cor dos hyperlinks para preto */
+    font-weight: bold; /* Transforma o conteudo dos hyperlinks para negrito(bold) */
+    font-size: 22px; /* tamanho da fonte de 22px */
+    text-decoration: none; /* Tira o sublinhado dos elementos da lista */
+}
+
+nav a:hover{/* Quando o mouse estiver por cima dos hiperlinks, dentro do menu de navegacao*/
+    color: #C78C19;
+    text-decoration: underline;
+
+}
+
+.caixa{
+    position: relative; /*Faz a caixa somente se deslocar relativamente do cabeçalho*/
+    width: 940px; /* largura de 940px */
+    /*alinhando a div ao centro*/
+    /* margem da direita e da esquerda iguais calculadas automaticamente */
+    margin: 0 auto; /* margem para cima e para baixo de 0px e para esquerda e para direita calculadas automaticamente para que tenham o mesmo tamnaho */
+    /*Delegamos para o navegador fazer a conta de calcular a largura que resta, dividir por dois, e adicionar metade em cada um dos lados.*/
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /*Cria uma margem interna superior e uma inferior de 50px, afastando os produtos do cabeçalho. */
+}
+.produtos li{
+    display: inline-block; /*os elementos ficam alinhados pela linha de baixo e ajustaveis separadamente*/
+    text-align: center; /*conteudo centralizados*/
+    width: 30%; /*cada uma das linhas ocupam 1/3 da largura da pagina*/
+    vertical-align: top; /*alinha todas as linhas por sua limitacao superior(top)*/
+    /* background: #CCCCCC; */ /*Margem para visualizar cada elemento da lista e seus espaçamentos, de forma mais clara*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*Faz com que a ocupaçao de 30% de cada elemento seja definitivo e que os espaçamentos internos estejam dentro desses 30%*/
+    /*configurando as bordas dos produtos*/
+    /*border-color: #000000;
+    border-width: 2px;
+    border-style: solid;*/
+    border: 2px solid #000000;
+    border-radius: 10px;
+
+}
+
+.produtos li:hover{ /* Quando o mouse estiver por cima dos hiperlinks, dentro da main dos produtos*/
+    border-color: #C78C19;
+}
+
+.produtos li:active{ /* Quando o mouse for clicado nos hiperlinks, dentro da main dos produtos*/
+    border-color: #088c19;
+}
+
+.produtos li:hover h2{
+    font-size: 35px;
+}
+
+
+.produtos h2{
+    font-size: 30px; /* Fonte dos títulos dos produtos de 30px de tamnho */
+    font-weight: bold; /* titulos em negrito */
+}
+
+.produto-preço{
+    font-size: 22px; /* Fonte dos preços dos produtos de 22px de tamnho */
+    font-weight: bold; /* preços dos produtos em negrito */
+    margin-top: 10px; /* espaçamento de 10px entre o texto do preço e o texto da descrição do corte */
+}
+
+.produto-descriçao{
+    font-size: 18px;
+}
+
+footer{
+    text-align: center;
+    background: url(bg.jpg); /* adicionando uma imagem de fundo em um elemento */
+    padding: 40px 0; /* espaçamento interno de 40px pra cima e pra baixo e 0 pros lados*/
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0; /* top = 20px; bot = 0px; left = 0; right = 0; */
+}
+
+main{
+    width: 940px; 
+    margin: 0 auto; /* centraliza o conteudo do elemento */
+}  /* top = 0; bot = 0; left e right se adequao á pagina */
+
+form{
+    margin: 40px 0; /* coloca uma margem externa de 40 px no formulário com relacao ás outras divisoes da pagina*/
+}  /* top = 40px; bot = 40px; left = 0; right = 0; */
+
+form label, form legend{
+    display: block; /* cada etiqueta dos inputs ocupa uma linha toda que ela pertence */
+    font-size: 20px; /* tamanho das etiquetas dos inputs aumentadas para 20px */
+    margin: 0 0 10px; /* Define po espaçamento de 10px entre a etiqueta e o conteudo a baixo dela */
+    /* top = 0; bot = 10px; left = 0 ; right = 0 */
+}
+
+.input_padrao{
+    display: block; /* cada input ocupa uma linha toda que ela pertence */
+    margin: 0 0 20px; /* Define po espaçamento de 20px entre o input e o conteudo a baixo dele */
+    /* top = 0; bot = 20px; left = 0 ; right = 0 */
+
+    padding: 10px 25px; /* definir tamanho do box dos inputs, atraves de mudar seus espaçamentos internos do conteudo */
+    /* top = 10px; bot = 10px; left = 25px ; right = 25px */
+    width: 50%; /* define os tamanhos dos blocos de input ocupndo 50% da pagina */
+}
+
+.checkbox{
+    margin: 20px 0; /* top = 20; bot = 20px; left = 0 ; right = 0 */
+}
+
+.periodo{
+    margin: 20px 0; /* Define po espaçamento de 20px entre o input e o conteudo a baixo dele */
+}
+
+.enviar{ /* classe para estilizar o botão de enviar o formulário */
+    width: 40%; /* aumenta o tamanho do botao para 40% da pagina */
+    padding: 15px 0; /* top = 15px; bot = 15px; left = 0 ; right = 0 */
+    background: orangered; /* define a cor de fundo do botao para laranja */
+    color: white; /* define a cor do texto do botao para Brnaca */
+    font-weight: bold; /* define a fonte do texto do botao em negrito */
+    font-size: 18px; /* define o tamanho do texto do botao em 18px */
+    border: none; /* remove a borda padrao do botao de submit */
+    border-radius: 5px; /* borda do botao aredondada com raio de 5px */
+    border: solid 1px; /* borda do botao solida com tamanho de 1px */
+    box-shadow: 10px 10px 10px 5px black; /* sombra preta no botao*/
+    transition: 1s all; /* a transicao de mudanças demora 1s*/
+    
+}
+
+.enviar:hover{ /* Quando o mouse estiver por cima do botao*/
+    background: red; /* muda a cor de fundo do boatao*/
+    cursor: pointer; /* a maozinha no cursor do mouse aparece*/
+    transform: scale(1.08); /* Aumenta proporcionalmente o elemento em 8% = 0,08 */
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    
+}
